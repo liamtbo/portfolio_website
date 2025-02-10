@@ -1,0 +1,23 @@
+
+/*everything in under within this div will be centered and diplayed vertically*/
+.pageTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectNames {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.projectsContainer {
+  display: flex;
+  gap: 40px;
+}
+
+.projectsCard {
+  width: 300px;
+  text-align: center;
+}
