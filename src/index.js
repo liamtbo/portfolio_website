@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Browser, Routes, Route, BrowserRouter } from 'react-router-dom'; // routing between pages
 import { LunarLander } from './pages/lunar_lander' 
 import { MilitaryClassifier } from './pages/military_image_classifier'
-
+import { Projects } from './pages/projects'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,8 +16,9 @@ root.render(
         <Route>
           {/* define app routes */}
           <Route index="/" element={<App />} /> {/* Home route */}
-          <Route path="lunar-lander" element={<LunarLander />} />
-          <Route path="military-classifier" element={<MilitaryClassifier />} />
+          <Route path="/projects" element={<Projects />} />
+            <Route path="lunar-lander" element={<LunarLander />} />
+            <Route path="military-classifier" element={<MilitaryClassifier />} />
         </Route>
       </Routes>
     </BrowserRouter>
