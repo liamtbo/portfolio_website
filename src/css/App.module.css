@@ -4,3 +4,13 @@
   margin-left: 50px;
   width: 75%;
 }
+
+.pageComponents {
+  display: flex;
+}
+
+.infoCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
