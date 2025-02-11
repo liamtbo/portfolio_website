@@ -1,0 +1,24 @@
+Background Colors
+
+    #0D1117 – Dark Gray/Black (Main background)
+    #161B22 – Darker Gray (Secondary background, modals)
+    #21262D – Even Darker Gray (Hovered elements, input fields)
+
+Text Colors
+
+    #C9D1D9 – Light Gray (Primary text)
+    #8B949E – Muted Gray (Secondary text)
+    #6E7681 – Tertiary text
+
+Borders and Dividers
+
+    #30363D – Medium Gray (Borders, dividers)
+    #484F58 – Darker Gray (More subtle dividers)
+
+Buttons and Interactive Elements
+
+    Primary (Blue): #238636 (Hovered: #2EA043)
+    Danger (Red): #DA3633 (Hovered: #FF7B72)
+    Links (Blue): #58A6FF
+    Success (Green): #2EA043
+    Warning (Yellow): #E3B341

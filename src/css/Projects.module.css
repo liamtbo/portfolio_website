@@ -5,6 +5,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #0D1117;
+  min-height: 100vh; /* Ensures it fills the full viewport height */
+  width: 100%; /* Ensures it stretches across the full width */
+  color: #C9D1D9;
 }
 
 .projectNames {
@@ -20,4 +24,8 @@
 .projectsCard {
   width: 300px;
   text-align: center;
+  background-color: #161B22;
+  border-radius: 10px;
+  padding: 20px;
+  color: #C9D1D9;
 }

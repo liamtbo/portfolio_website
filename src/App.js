@@ -3,14 +3,14 @@ import { NavBar } from './components/NavBar'
 
 function App() {
   return (
-    <div>
+    <div style={{backgroundColor: "#0D1117"}}>
       <div>
         <NavBar />
       </div>
       <div className={style.pageComponents}>
         <div>
-          <img src="headshot.jpeg" alt="headshot" style={{ width: '200px', height: "auto" }} />
             <div className={style.infoCard}>
+              <img src="headshot.jpeg" alt="headshot" style={{ width: '200px', height: "auto" }} />
               <p>Liam Bouffard</p>
               <p>(503) 875-9854</p>
               <p>liamtbo@gmail.com</p>
