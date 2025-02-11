@@ -21,6 +21,7 @@
   gap: 40px;
 }
 
+/* for each project title/mico project description*/
 .projectsCard {
   width: 300px;
   text-align: center;
@@ -28,4 +29,15 @@
   border-radius: 10px;
   padding: 20px;
   color: #C9D1D9;
+}
+
+/* when user wants more information on a project, a longer description pops out */
+.longProjectDescription {
+  width: 800px;
+  text-align: left;
+  background-color: #161B22;
+  border-radius: 10px;
+  padding: 20px;
+  color: #C9D1D9;
+  margin: 20px;
 }

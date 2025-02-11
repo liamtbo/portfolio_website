@@ -1,15 +1,55 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { NavBar } from '../components/NavBar'
 import styles from '../css/Projects.module.css'
+import { LunarLander } from '../components/LunarLander'
+import { MilitaryVehicleCNN } from '../components/MilitaryVehicleCNN'
 
 export function Projects() {
+  const [value, setValue] = useState("");
+  const [result, setResult] = useState("");
+
+  function handleSumbit(e) {
+    e.preventDefault();
+    setResult(value)
+  }
+
+  function handleChange(e) {
+    setValue(e.target.value);
+    setResult("");
+  }
+
   return (
     <div>
       < NavBar />
       <div className={styles.pageTitle}>
         <h1>Projects</h1>
+        <form onSubmit={handleSumbit}>
+          <label>Which project would you like more information on? </label>
+          <input
+            valye={value}
+            onInput={handleChange}
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <p><strong>Options:</strong> Lunar Lander, Vehicle Classification</p>
+
+        {result.toLowerCase() === "lunar lander" && (
+          <div className={styles.longProjectDescription}>
+            < LunarLander />
+          </div>)
+        }
+
+        {result.toLowerCase() === "vehicle classification" && (
+          <div className={styles.longProjectDescription}>
+            < MilitaryVehicleCNN />
+          </div>
+        )}
+
+        {/*makes projects display horizontally */}
         <div className={styles.projectsContainer}>
+          {/*makes project descriptions become column */}
           <div className={styles.projectsCard}>
             <a href="https://github.com/liamtbo/lunar_landing_dqn" target="_blank" rel="noreferrer" className={styles.projectNames}>Lunar Lander</a>
             <img src="lunar-lander.png" alt="lunar landing" style={{ width: '300px', height: '200px' }}/>
