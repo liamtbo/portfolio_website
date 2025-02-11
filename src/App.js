@@ -18,7 +18,7 @@ function App() {
               <a href="https://www.linkedin.com/in/liam-bouffard" target="_blank" rel="noreferrer" >LinkedIn</a>
             </div>
         </div>
-        <div className={style.titles}>
+        <div className={style.portfolioSeg}>
           <h1>Welcome to My Portfolio</h1> {/* Move this to the top */}
           <p>Welcome to my portfolio website. I'm Liam, a senior Computer Science student at the <a href="https://www.uoregon.edu/" target="_blank" rel="noopener noreferrer">University of Oregon</a>.</p>
 
