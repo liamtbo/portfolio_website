@@ -8,15 +8,13 @@ function App() {
         <NavBar />
       </div>
       <div className={style.pageComponents}>
-        <div>
-            <div className={style.infoCard}>
-              <img src="headshot.jpeg" alt="headshot" style={{ width: '200px', height: "auto" }} />
-              <p>Liam Bouffard</p>
-              <p>(503) 875-9854</p>
-              <p>liamtbo@gmail.com</p>
-              <a href="https://github.com/liamtbo" target="_blank" rel="noreferrer" >Github</a>
-              <a href="https://www.linkedin.com/in/liam-bouffard" target="_blank" rel="noreferrer" >LinkedIn</a>
-            </div>
+        <div className={style.personalCard}>
+          <img src="headshot.jpeg" alt="headshot" style={{ width: '200px', height: "auto" }} />
+          <p>Liam Bouffard</p>
+          <p>(503) 875-9854</p>
+          <p>liamtbo@gmail.com</p>
+          <a href="https://github.com/liamtbo" target="_blank" rel="noreferrer" >Github</a>
+          <a href="https://www.linkedin.com/in/liam-bouffard" target="_blank" rel="noreferrer" >LinkedIn</a>
         </div>
         <div className={style.infoOverall}>
           <div className={style.portfolioSeg}> 
@@ -48,6 +46,11 @@ function App() {
           <div className={style.portfolioSeg}> 
             <p>Feel free to explore my portfolio to learn more about my work and how I can contribute to the future of technology!</p>
           </div>
+        </div>
+        <div className={style.educationCard}>
+          <h2>Education</h2>
+          <img src="UO.png" alt="UO" style={{ width: '150px', height: "auto" }}></img>
+          <img src="OSU.png" alt="OSU" style={{ width: '150px', height: "auto" }}></img>
         </div>
       </div>
     </div>

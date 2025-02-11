@@ -13,12 +13,13 @@
 }
 
 .infoOverall {
-  margin-left: 290px;
+  margin-left: 260px;
+  margin-right: 225px;
   display: flex;
   flex-direction: column;
 }
 
-.infoCard {
+.personalCard {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -26,8 +27,19 @@
   background-color: #161B22;
   border-radius: 10px;
   padding: 20px; /*adds space insice element between its content (text, borders..)*/
-  /* margin-top: 5; */
   margin: 15px; /*25px on top,bottom,left,and right*/
-  /* margin-left: 20; */
   position: fixed;
+}
+
+.educationCard {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  color: #C9D1D9;
+  background-color: #161B22;
+  border-radius: 10px;
+  padding: 20px;
+  position: fixed;
+  /* left: 680px; */
+  right: 15px;
 }
