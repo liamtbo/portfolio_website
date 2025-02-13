@@ -16,3 +16,12 @@
   height: 100vh;
   width: 100vw;
 }
+
+.submittedText {
+  display: flex; /* allows tools to minipulate below*/
+  justify-content: center; /* center horizontally */
+  align-items: center; /* aligns vertically */
+  height: 100vh; /* flex box takes up whole hight of page */
+  color: #C9D1D9;
+  flex-direction: column;
+}
