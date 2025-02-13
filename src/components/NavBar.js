@@ -8,7 +8,7 @@ export function NavBar() {
     <nav className={styles.navBar}>
       <Link className={styles.navbarItem} to="/">Home</Link>
       <Link className={styles.navbarItem} to="/projects">Projects</Link>
-      <Link className={styles.navbarItem} to="/Contact">Contact</Link>
+      <Link className={styles.navbarItem} to="/contact">Contact</Link>
     </nav>
   )
 }
