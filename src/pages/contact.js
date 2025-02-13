@@ -46,23 +46,21 @@ export function Contact() {
   };
 
   return (
-    <div>
-      <div className={styles.pageBackground}>
-        < NavBar />
-        {!submitted ? (
-          <form className={styles.form} onSubmit={handleSubmit(onSubmit)} >
-            <input {...register("name")} placeholder="Your Name" />
-            <input {...register("email")} placeholder="Your Email" />
-            <textarea {...register("message")} placeholder="Message..." />
-            <button type="submit" >Send Message</button>
-          </form>
-        ) : (
-          <div className={styles.submittedText}>
-            <h4>Thank you for your message!</h4>
-            <button onClick={() => setSubmitted(0)}>Send Another Message</button>
-          </div>
-        )}
-      </div>
+    <div className={styles.pageBackground}>
+      < NavBar />
+      {!submitted ? (
+        <form className={styles.form} onSubmit={handleSubmit(onSubmit)} >
+          <input {...register("name")} placeholder="Your Name" />
+          <input {...register("email")} placeholder="Your Email" />
+          <textarea {...register("message")} placeholder="Message..." />
+          <button type="submit" >Send Message</button>
+        </form>
+      ) : (
+        <div className={styles.submittedText}>
+          <h4>Thank you for your message!</h4>
+          <button onClick={() => setSubmitted(0)}>Send Another Message</button>
+        </div>
+      )}
     </div>
   )
 }

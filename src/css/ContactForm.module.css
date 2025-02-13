@@ -1,27 +1,35 @@
 
-.form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 80px;
-  margin-left: 90px;
-  margin-right: 90px;
-  color: #C9D1D9;
-  /* background-color: #161B22; */
-  border-radius: 10px;
-  padding: 100px;
-}
-
 .pageBackground {
-  background-color: #161B22;
+  /* background-color: #161B22;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0e13;
   height: 100vh;
   width: 100vw;
 }
 
-.submittedText {
-  display: flex; /* allows tools to minipulate below*/
-  justify-content: center; /* center horizontally */
-  align-items: center; /* aligns vertically */
-  height: 100vh; /* flex box takes up whole hight of page */
-  color: #C9D1D9;
+.form {
+  display: flex;
   flex-direction: column;
+  justify-content: center; /*horizontal alignment*/
+  align-items: center; /*vertical*/
+  background-color: #161B22; /* background color of this flexbox*/
+  border-radius: 10px; /* smoothed corner */
+  padding: 20px; /* spacing within form */
+  width: 300px;
+  height: 400px;
+}
+
+input, textarea {
+  width: 100%; /* makes input boxes fit horizontally */
+  height: 10%;
+  padding: 10px; /* makes each input box bigger */
+  margin-bottom: 10px; /* space between each input box */
+  border-radius: 5px;
+  border: none
+}
+
+.submittedText {
+
 }
