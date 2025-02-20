@@ -41,3 +41,8 @@
   color: #C9D1D9;
   margin: 20px;
 }
+
+.centerForm {
+    display: flex;
+    flex-direction: column;
+}

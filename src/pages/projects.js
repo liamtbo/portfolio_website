@@ -6,11 +6,12 @@ import { LunarLander } from '../components/LunarLander'
 import { MilitaryVehicleCNN } from '../components/MilitaryVehicleCNN'
 
 export function Projects() {
+
   const [value, setValue] = useState("");
   const [result, setResult] = useState("");
 
   function handleSumbit(e) {
-    e.preventDefault();
+    e.preventDefault(); // prevents page from reloading
     setResult(value)
   }
 
@@ -24,10 +25,10 @@ export function Projects() {
       < NavBar />
       <div className={styles.pageTitle}>
         <h1>Projects</h1>
-        <form onSubmit={handleSumbit}>
+        <form onSubmit={handleSumbit} className={styles.centerForm}>
           <label>Which project would you like more information on? </label>
           <input
-            valye={value}
+            value={value}
             onInput={handleChange}
             required
           />
