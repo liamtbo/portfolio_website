@@ -31,5 +31,6 @@ input, textarea {
 }
 
 .submittedText {
-
+    text-align: center;
+    color: #C9D1D9;
 }

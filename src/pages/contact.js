@@ -4,16 +4,6 @@ import { NavBar } from '../components/NavBar'
 import { useForm } from 'react-hook-form';
 import styles from '../css/ContactForm.module.css';
 
-/*next steps making text box a conditional render,
-if they've sent a message change a state variable and make it so inputs dont show
-thanks them for sending a message
-create button for sending another which chanes state varaible back
-i just wont create a back end yet and tell him */
-
-// const test = {} => {
-
-// }
-
 export function Contact() {
   const [submitted, setSubmitted] = useState(0);
 
@@ -28,21 +18,6 @@ export function Contact() {
   const onSubmit = async (data) => {
     setSubmitted(1);
     console.log(data);
-    // sends POST request to backend running on port 5000
-    // const response = await fetch("http://localhost:5000/send-email", {
-    //   // tells request its of POST type
-    //   method: "POST",
-    //   // tell server the request body is JSON data
-    //   headers: { "Content-Type": "application/json"},
-    //   // converts data into JSON string, good for sending json data over networks
-    //   body: JSON.stringify(data),
-    // });
-
-    // if (response.ok) {
-    //   alert("Message sent successfully");
-    // } else {
-    //   alert("Error sending message");
-    // }
   };
 
   return (
