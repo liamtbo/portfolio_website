@@ -24,12 +24,12 @@ export function Contact() {
     <div className={styles.pageBackground}>
       < NavBar />
       {!submitted ? (
-        <form className={styles.form} onSubmit={handleSubmit(onSubmit)} >
-        <input {...register("name")} placeholder="Your Name" />
-        <input {...register("email")} placeholder="Your Email" />
-        <textarea {...register("message")} placeholder="Message..." />
-        <button type="submit" >Send Message</button>
-        </form>
+            <form className={styles.form} onSubmit={handleSubmit(onSubmit)} >
+            <input {...register("name")} placeholder="Your Name" />
+            <input {...register("email")} placeholder="Your Email" />
+            <textarea {...register("message")} placeholder="Message..." />
+            <button type="submit" >Send Message</button>
+            </form>
       ) : (
         <div className={styles.submittedText}>
           <h4>Thank you for your message!</h4>
